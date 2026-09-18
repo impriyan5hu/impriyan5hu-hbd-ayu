@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 430" role="img" aria-labelledby="title description">
+  <title id="title">A handmade party cat</title>
+  <description id="description">A halftone-style cat wearing a purple birthday hat with yellow stars.</description>
+  <defs>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#7256a9" opacity=".6"/>
+    </pattern>
+    <clipPath id="cat-shape">
+      <path d="M76 358c-7-76 17-141 67-170l-12-58 54 33c17-3 34-3 51 0l51-35-9 60c48 31 67 96 58 170-7 51-42 65-104 65H176c-61 0-95-16-100-65Z"/>
+    </clipPath>
+  </defs>
+  <path d="M111 136 183 19l92 131Z" fill="#7860c7" stroke="#5d46a2" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M181 19c9 1 19 8 20 18-7 6-20 5-26-2-3-7 0-12 6-16Z" fill="#efbd3d"/>
+  <path d="m180 65 7 13 15 2-11 10 3 15-14-7-14 7 3-15-11-10 15-2Z" fill="#f7d84b"/>
+  <path d="m220 107 5 10 12 2-9 8 2 12-10-6-11 6 2-12-9-8 12-2Z" fill="#f7d84b"/>
+  <path d="M76 358c-7-76 17-141 67-170l-12-58 54 33c17-3 34-3 51 0l51-35-9 60c48 31 67 96 58 170-7 51-42 65-104 65H176c-61 0-95-16-100-65Z" fill="#f2eadb" stroke="#67517e" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="56" y="119" width="250" height="310" fill="url(#dots)" clip-path="url(#cat-shape)" opacity=".44"/>
+  <path d="M139 226c12-9 25-9 38 0M231 226c12-9 25-9 38 0" fill="none" stroke="#55435f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M196 251c8 8 17 8 25 0" fill="none" stroke="#55435f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M113 254 46 238m67 40-72 6m264-30 45-18m-44 43 49 7" fill="none" stroke="#67517e" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <path d="M110 337c30 23 62 35 98 35s69-12 100-36" fill="none" stroke="#c86a94" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="120" cy="207" r="12" fill="#e9a5ad" opacity=".7"/>
+  <circle cx="286" cy="207" r="12" fill="#e9a5ad" opacity=".7"/>
+</svg>

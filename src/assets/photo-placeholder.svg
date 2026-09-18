@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Your photo here</title>
+  <desc id="desc">A neutral scrapbook photo placeholder ready to be replaced.</desc>
+  <rect width="800" height="600" fill="#eee5f2"/>
+  <path d="M0 470C130 410 215 520 345 463S566 387 800 476V600H0Z" fill="#f7efdf" opacity=".72"/>
+  <g fill="none" stroke="#9d72d1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 248c-42-50-116 14 0 95 116-81 42-145 0-95Z" stroke-width="9"/>
+    <path d="m225 165 8 18 19 8-19 8-8 19-8-19-19-8 19-8Z" stroke-width="5"/>
+    <path d="m610 378 6 14 14 6-14 6-6 14-6-14-14-6 14-6Z" stroke-width="5"/>
+  </g>
+  <text x="400" y="408" text-anchor="middle" fill="#765496" font-size="43" font-family="cursive">Your photo here</text>
+</svg>
