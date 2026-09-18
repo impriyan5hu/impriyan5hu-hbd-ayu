@@ -107,6 +107,28 @@ export function FinalBirthdayMessageScreen() {
         </div>
       </div>
 
+      <div className="mx-auto mt-8 w-full max-w-[26rem] px-3">
+        <div className="relative rounded-2xl border-2 border-primary/30 bg-primary-foreground/80 px-5 py-5 text-center">
+          <span aria-hidden="true" className="absolute -left-2 -top-2 rotate-[-8deg] text-lg text-primary">♪</span>
+          <span aria-hidden="true" className="absolute -right-2 -top-2 rotate-[12deg] text-lg text-primary">♫</span>
+          <p className="mb-3 font-handwritten text-base font-bold text-primary sm:text-lg">
+            A little voice note, just for you 🎧
+          </p>
+          <audio
+            controls
+            preload="metadata"
+            className="mx-auto w-full max-w-[20rem]"
+            aria-label="Birthday voice message"
+          >
+            <source src="/voice-message.m4a" type="audio/mp4" />
+            <source src="/voice-message.opus" type="audio/ogg; codecs=opus" />
+            <source src="/voice-message.opus" type="audio/ogg" />
+            <source src="/voice-message.opus" type="audio/opus" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
       <div className="relative mt-7 flex min-h-32 flex-col items-center justify-start pb-5">
         <div aria-hidden="true" className={`final-love-burst pointer-events-none absolute left-1/2 top-0 ${loveSent ? "is-visible" : ""}`}>
           <span className="absolute -left-14 -top-1 text-lg text-primary">♥</span>
