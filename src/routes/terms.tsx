@@ -52,9 +52,15 @@ export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
       { title: "Friendship Terms & Conditions | Birthday Surprise" },
-      { name: "description", content: "A playful, heartfelt set of friendship promises hidden inside a birthday card." },
+      {
+        name: "description",
+        content: "A playful, heartfelt set of friendship promises hidden inside a birthday card.",
+      },
       { property: "og:title", content: "Friendship Terms & Conditions | Birthday Surprise" },
-      { property: "og:description", content: "A playful, heartfelt set of friendship promises hidden inside a birthday card." },
+      {
+        property: "og:description",
+        content: "A playful, heartfelt set of friendship promises hidden inside a birthday card.",
+      },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
     ],

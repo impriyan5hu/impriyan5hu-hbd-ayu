@@ -48,9 +48,15 @@ export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
       { title: "Friendship Privacy Policy | Birthday Surprise" },
-      { name: "description", content: "A cute, heartfelt friendship privacy promise hidden inside a birthday card." },
+      {
+        name: "description",
+        content: "A cute, heartfelt friendship privacy promise hidden inside a birthday card.",
+      },
       { property: "og:title", content: "Friendship Privacy Policy | Birthday Surprise" },
-      { property: "og:description", content: "A cute, heartfelt friendship privacy promise hidden inside a birthday card." },
+      {
+        property: "og:description",
+        content: "A cute, heartfelt friendship privacy promise hidden inside a birthday card.",
+      },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
     ],

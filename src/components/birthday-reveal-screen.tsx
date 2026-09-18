@@ -6,7 +6,10 @@ type BirthdayPhotoProps = {
   alt?: string;
 };
 
-export function BirthdayPhoto({ src = "/photo-5.jpg", alt = "Birthday celebration memory" }: BirthdayPhotoProps) {
+export function BirthdayPhoto({
+  src = "/photo-5.jpg",
+  alt = "Birthday celebration memory",
+}: BirthdayPhotoProps) {
   return (
     <PhotoFrame
       src={src}
@@ -33,7 +36,10 @@ function BalloonCluster() {
 
 function PartyBunting() {
   return (
-    <div aria-hidden="true" className="absolute inset-x-1 top-0 flex justify-center overflow-hidden sm:inset-x-5">
+    <div
+      aria-hidden="true"
+      className="absolute inset-x-1 top-0 flex justify-center overflow-hidden sm:inset-x-5"
+    >
       <div className="relative flex h-10 w-full items-start justify-around border-t-2 border-primary pt-0.5 sm:h-14">
         {Array.from({ length: 11 }).map((_, index) => (
           <span
@@ -50,7 +56,10 @@ const birthdayLetters = "HAPPYBIRTHDAY".split("");
 
 function BirthdayHeading() {
   return (
-    <h1 aria-label="Happy Birthday" className="reveal-title flex max-w-full flex-col items-center gap-1">
+    <h1
+      aria-label="Happy Birthday"
+      className="reveal-title flex max-w-full flex-col items-center gap-1"
+    >
       {[birthdayLetters.slice(0, 5), birthdayLetters.slice(5)].map((line, lineIndex) => (
         <span className="flex justify-center gap-0.5 sm:gap-1" key={lineIndex}>
           {line.map((letter, index) => (
@@ -83,21 +92,33 @@ export function BirthdayRevealScreen({ onNext }: BirthdayRevealScreenProps) {
     <section className="relative flex w-full max-w-[38rem] flex-col items-center overflow-hidden px-1 pb-1 pt-11 text-center sm:px-6 sm:pt-14">
       <PartyBunting />
 
-      <div aria-hidden="true" className="absolute left-[5%] top-[30%] text-2xl text-primary sm:left-[8%] sm:text-3xl">
+      <div
+        aria-hidden="true"
+        className="absolute left-[5%] top-[30%] text-2xl text-primary sm:left-[8%] sm:text-3xl"
+      >
         ★
       </div>
-      <div aria-hidden="true" className="absolute right-[5%] top-[38%] text-xl text-primary sm:right-[8%] sm:text-2xl">
+      <div
+        aria-hidden="true"
+        className="absolute right-[5%] top-[38%] text-xl text-primary sm:right-[8%] sm:text-2xl"
+      >
         ✦
       </div>
 
       <div className="relative grid w-full max-w-[31rem] grid-cols-[3.5rem_minmax(0,1fr)_3.5rem] items-center justify-items-center gap-1 px-0 sm:grid-cols-[6rem_minmax(0,1fr)_6.5rem] sm:gap-3 sm:px-4">
         <BalloonCluster />
         <div className="relative">
-          <span aria-hidden="true" className="absolute -left-6 -top-5 rotate-[-10deg] text-3xl text-accent sm:-left-9 sm:text-4xl">
+          <span
+            aria-hidden="true"
+            className="absolute -left-6 -top-5 rotate-[-10deg] text-3xl text-accent sm:-left-9 sm:text-4xl"
+          >
             ★
           </span>
           <BirthdayPhoto />
-          <span aria-hidden="true" className="absolute -right-3 -top-7 text-4xl text-primary sm:-right-6 sm:text-5xl">
+          <span
+            aria-hidden="true"
+            className="absolute -right-3 -top-7 text-4xl text-primary sm:-right-6 sm:text-5xl"
+          >
             ◉
           </span>
         </div>
@@ -109,11 +130,17 @@ export function BirthdayRevealScreen({ onNext }: BirthdayRevealScreenProps) {
       </div>
 
       <div className="relative mt-2 sm:mt-3">
-        <span aria-hidden="true" className="absolute -left-8 top-6 text-3xl text-accent sm:-left-12 sm:text-4xl">
+        <span
+          aria-hidden="true"
+          className="absolute -left-8 top-6 text-3xl text-accent sm:-left-12 sm:text-4xl"
+        >
           ★
         </span>
         <BirthdayHeading />
-        <span aria-hidden="true" className="absolute -right-8 top-6 text-3xl text-accent sm:-right-12 sm:text-4xl">
+        <span
+          aria-hidden="true"
+          className="absolute -right-8 top-6 text-3xl text-accent sm:-right-12 sm:text-4xl"
+        >
           ★
         </span>
       </div>

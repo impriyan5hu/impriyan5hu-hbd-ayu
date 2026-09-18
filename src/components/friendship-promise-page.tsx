@@ -16,7 +16,12 @@ type FriendshipPromisePageProps = {
   secondaryAgreeLabel?: string;
 };
 
-const promiseRotations = ["-rotate-[0.8deg]", "rotate-[0.7deg]", "-rotate-[0.5deg]", "rotate-[0.9deg]"];
+const promiseRotations = [
+  "-rotate-[0.8deg]",
+  "rotate-[0.7deg]",
+  "-rotate-[0.5deg]",
+  "rotate-[0.9deg]",
+];
 
 export function FriendshipPromisePage({
   titleId,
@@ -29,10 +34,30 @@ export function FriendshipPromisePage({
 }: FriendshipPromisePageProps) {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-background px-4 py-10 sm:px-6 sm:py-14">
-      <span aria-hidden="true" className="final-float absolute left-[6%] top-10 text-xl text-primary">✦</span>
-      <span aria-hidden="true" className="final-float absolute right-[7%] top-32 text-lg text-primary">✧</span>
-      <span aria-hidden="true" className="final-float absolute bottom-24 left-[9%] text-xl text-primary">♡</span>
-      <span aria-hidden="true" className="final-float absolute bottom-40 right-[6%] text-base text-primary">⋆</span>
+      <span
+        aria-hidden="true"
+        className="final-float absolute left-[6%] top-10 text-xl text-primary"
+      >
+        ✦
+      </span>
+      <span
+        aria-hidden="true"
+        className="final-float absolute right-[7%] top-32 text-lg text-primary"
+      >
+        ✧
+      </span>
+      <span
+        aria-hidden="true"
+        className="final-float absolute bottom-24 left-[9%] text-xl text-primary"
+      >
+        ♡
+      </span>
+      <span
+        aria-hidden="true"
+        className="final-float absolute bottom-40 right-[6%] text-base text-primary"
+      >
+        ⋆
+      </span>
 
       <article
         aria-labelledby={titleId}
@@ -40,13 +65,19 @@ export function FriendshipPromisePage({
       >
         <div className="rounded-[1.1rem] border border-dashed border-primary/60 px-4 py-6 sm:px-7 sm:py-8">
           <header className="text-center">
-            <h1 id={titleId} className="mx-auto max-w-[30rem] font-display text-[2rem] leading-[1.08] text-primary sm:text-4xl">
+            <h1
+              id={titleId}
+              className="mx-auto max-w-[30rem] font-display text-[2rem] leading-[1.08] text-primary sm:text-4xl"
+            >
               {title}
             </h1>
             <p className="mx-auto mt-3 max-w-[26rem] font-handwritten text-base leading-[1.6] text-muted-foreground sm:text-lg">
               {subtitle}
             </p>
-            <div aria-hidden="true" className="my-4 flex items-center justify-center gap-3 text-primary">
+            <div
+              aria-hidden="true"
+              className="my-4 flex items-center justify-center gap-3 text-primary"
+            >
               <span className="text-xs">✦</span>
               <span className="font-display text-xl">♡</span>
               <span className="text-xs">✦</span>

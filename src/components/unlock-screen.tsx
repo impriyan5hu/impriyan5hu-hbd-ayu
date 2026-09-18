@@ -18,7 +18,8 @@ function DeleteMark() {
 }
 
 function KeypadButton({ value, onPress }: { value: KeyValue; onPress: (value: KeyValue) => void }) {
-  const label = value === "delete" ? "Delete last digit" : value === "enter" ? "Enter passcode" : value;
+  const label =
+    value === "delete" ? "Delete last digit" : value === "enter" ? "Enter passcode" : value;
 
   return (
     <button
@@ -70,8 +71,13 @@ function NumericUnlock({ onUnlock }: { onUnlock: () => void }) {
   });
 
   return (
-    <section className="unlock-panel relative mx-auto w-full max-w-[12.5rem] px-4 py-4 sm:max-w-[17rem] sm:px-7 sm:py-6" aria-label="Birthday passcode">
-      <p className="mb-2 text-center text-xs font-bold text-muted-foreground sm:mb-4 sm:text-sm">Enter passcode</p>
+    <section
+      className="unlock-panel relative mx-auto w-full max-w-[12.5rem] px-4 py-4 sm:max-w-[17rem] sm:px-7 sm:py-6"
+      aria-label="Birthday passcode"
+    >
+      <p className="mb-2 text-center text-xs font-bold text-muted-foreground sm:mb-4 sm:text-sm">
+        Enter passcode
+      </p>
       <div
         aria-label={`${digits.length} of ${PASSCODE_LENGTH} digits entered`}
         className={`mb-3 flex justify-center gap-2 sm:mb-5 sm:gap-3 ${status === "wrong" ? "animate-shake" : ""}`}
@@ -90,7 +96,11 @@ function NumericUnlock({ onUnlock }: { onUnlock: () => void }) {
         ))}
       </div>
       <p className="sr-only" aria-live="polite">
-        {status === "wrong" ? "Incorrect passcode" : status === "unlocked" ? "Passcode accepted" : ""}
+        {status === "wrong"
+          ? "Incorrect passcode"
+          : status === "unlocked"
+            ? "Passcode accepted"
+            : ""}
       </p>
     </section>
   );
@@ -109,10 +119,16 @@ export function UnlockScreen({ onUnlock }: { onUnlock: () => void }) {
           </p>
         </div>
 
-        <div aria-hidden="true" className="absolute left-[6%] top-[42%] text-base text-primary sm:left-[4%]">
+        <div
+          aria-hidden="true"
+          className="absolute left-[6%] top-[42%] text-base text-primary sm:left-[4%]"
+        >
           ✦
         </div>
-        <div aria-hidden="true" className="absolute right-[5%] top-[32%] text-xl text-primary sm:right-[2%]">
+        <div
+          aria-hidden="true"
+          className="absolute right-[5%] top-[32%] text-xl text-primary sm:right-[2%]"
+        >
           ✧
         </div>
 
@@ -125,7 +141,12 @@ export function UnlockScreen({ onUnlock }: { onUnlock: () => void }) {
             className="unlock-memory-photo w-full rotate-[-3deg] border border-primary p-1.5 pb-5"
             imageClassName="object-cover object-center"
           >
-            <span aria-hidden="true" className="absolute bottom-0.5 left-1/2 -translate-x-1/2 font-handwritten text-xs font-bold text-primary">♡</span>
+            <span
+              aria-hidden="true"
+              className="absolute bottom-0.5 left-1/2 -translate-x-1/2 font-handwritten text-xs font-bold text-primary"
+            >
+              ♡
+            </span>
           </PhotoFrame>
           <img
             src={partyCat}

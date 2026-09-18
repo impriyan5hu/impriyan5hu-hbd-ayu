@@ -30,7 +30,9 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [screen, setScreen] = useState<"unlock" | "question" | "reveal" | "cake" | "gift" | "final">("unlock");
+  const [screen, setScreen] = useState<
+    "unlock" | "question" | "reveal" | "cake" | "gift" | "final"
+  >("unlock");
 
   return (
     <BirthdayAppShell>

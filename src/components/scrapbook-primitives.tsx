@@ -11,7 +11,10 @@ export function DecorativeStars({ stars }: { stars: readonly DecorativeStar[] })
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
       {stars.map((star, index) => (
-        <span key={`${star.glyph}-${index}`} className={`decorative-star absolute text-primary ${star.className}`}>
+        <span
+          key={`${star.glyph}-${index}`}
+          className={`decorative-star absolute text-primary ${star.className}`}
+        >
           {star.glyph}
         </span>
       ))}
@@ -27,7 +30,13 @@ export function ScrapbookCard({ children }: { children: ReactNode }) {
   );
 }
 
-export function ScreenTransition({ children, className = "" }: { children: ReactNode; className?: string }) {
+export function ScreenTransition({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return <div className={`screen-enter w-full ${className}`}>{children}</div>;
 }
 
@@ -61,15 +70,31 @@ type PhotoFrameProps = {
   children?: ReactNode;
 };
 
-export function PhotoFrame({ src, alt, placeholderLabel, className = "", imageClassName = "", aspectClassName = "aspect-[4/3]", children }: PhotoFrameProps) {
+export function PhotoFrame({
+  src,
+  alt,
+  placeholderLabel,
+  className = "",
+  imageClassName = "",
+  aspectClassName = "aspect-[4/3]",
+  children,
+}: PhotoFrameProps) {
   return (
     <figure className={`photo-frame relative overflow-hidden bg-primary-foreground ${className}`}>
-      <div className={`relative overflow-hidden border border-primary/35 bg-muted ${aspectClassName}`}>
+      <div
+        className={`relative overflow-hidden border border-primary/35 bg-muted ${aspectClassName}`}
+      >
         {src ? (
           <img src={src} alt={alt} className={`h-full w-full object-cover ${imageClassName}`} />
         ) : (
-          <div role="img" aria-label={placeholderLabel} className="flex h-full w-full flex-col items-center justify-center gap-1 bg-secondary/45 px-3 text-center text-primary">
-            <span aria-hidden="true" className="font-display text-4xl leading-none sm:text-5xl">♡</span>
+          <div
+            role="img"
+            aria-label={placeholderLabel}
+            className="flex h-full w-full flex-col items-center justify-center gap-1 bg-secondary/45 px-3 text-center text-primary"
+          >
+            <span aria-hidden="true" className="font-display text-4xl leading-none sm:text-5xl">
+              ♡
+            </span>
             <span className="font-handwritten text-sm font-bold sm:text-base">your photo here</span>
           </div>
         )}
